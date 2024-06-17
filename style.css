@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Montserrat', 'Mulish', 'Rubik', sans-serif;
+    /* border: 1px solid black; */
+}
+
+/* DEFAULT COLORS */
+
+:root {
+    --logo-color-1: #00B5B2;
+    --logo-color-2: #0075AA;
+    --off-white: rgba(245, 245, 245, 1);
+    --off-white-variant: rgba(235, 235, 235, 1);
+    --black-text: #00364f;
+    font-size: 16px;
+    
+}
+
+/* MISC */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    padding-top: 20vh;
+    background-color: var(--off-white);
+}
+
+/* HEADER */
+
+header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 20vh;
+    background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1)) padding-box, linear-gradient(to right, rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0.1) 11%, rgba(0, 0, 0, 0.1) 89%, rgba(0, 0, 0, 0) 95%) border-box;
+    border: 2px solid transparent;  
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1.75%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+#topo{
+    position: absolute;
+    top: 0;
+}
+
+.logobox {
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+}
+
+.navbox {
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbox a{
+    color: var(--black-text);
+    margin: 0 1em;
+    transition-duration: .75s;
+}
+
+a, a:active, a:visited{
+    text-decoration: none;
+}
+
+.navbox a:hover{
+    transition-duration: .75s;
+    color: #0075ab;
+}
+
+/* MAIN SECTION */
+
+.phrase-section {
+    text-shadow: var(--black-text) 0 0 9px;
+    background-image: url(img/img1.png);
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 70vh;
+    
+}
+
+.phrase-section section{
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-flow: nowrap row;
+    font-size: 2.5em;
+    height: 100%;
+}
+
+.phrase-section h2{
+    background: linear-gradient(180deg, var(--off-white) 2%, #00000005 20%, #00000005 99%, var(--off-white));
+    width: 50vw;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phrase-section h2 p{
+    width: fit-content;
+    height: fit-content;
+    text-align: end;
+}
+
+.phrase-section div{
+    background: linear-gradient(180deg, var(--off-white) 2%, #00000005 20%, #00000005 99%, var(--off-white));
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.phrase-section div p{
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+
+.quartos {
+    font-size: 1.5em;
+    padding: 5vw;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.quartos .fullwidth{
+    width: 100%;
+}
+
+.quartos article{
+    width: 45%;
+    margin: 10vh auto;
+}
+
+.quartos h2 {
+    margin-left: 1vw;
+    font-size: 7vh;
+}
+
+.quartos h3{
+    text-align: center;
+}
+
+.quartos p{
+    margin: 2vh auto;
+}
+
+.quartos div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.quartos div div{
+    margin: 2vh auto;
+    overflow: hidden;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quartos div div img{
+    height: 10rem;
+}
+
+.localizacao {
+    background-color: var(--black-text);
+    color: var(--logo-color-1);
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+.localizacao article{
+    padding: 5vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.localizacao h2, .localizacao h4{
+    text-align: center;
+    margin: 2vh 0 0 0;
+}
+
+.localizacao p{
+    margin: 4vh 0;
+    font-size: 3.5vh;
+}
+
+.localizacao img{
+    height: 50vh;
+    outline: 5px solid var(--logo-color-2);
+    border-radius: 2.5vh 10vh;
+}
+
+.reservas {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.reservas h2{
+    width: 100vw;
+    text-align: center;
+    font-size: 7vh;
+    margin: 5vh 0;
+}
+
+.registro{
+    width: 50%;
+    display: flex;
+    flex-flow: wrap row;
+    font-size: 3.5vh;
+    padding: 5vw;
+}
+
+.registro label{
+    height: 100%;
+    width: 11vw;
+    text-align: end;
+}
+
+.registro input{
+    border-radius: 1vh;
+    box-shadow: 1px 1px 0;
+    height: 100%;
+    width: 10vw;
+}
+
+.number {
+    width: 100%;
+}
+
+.check{
+    width: 100%;
+    display: flex;
+    padding: 1vh;
+    justify-content: center;
+}
+
+.registro .label-numero {
+    height: 100%;
+}
+
+.number {
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.registro .numero {
+    width: 2.5vw;
+    height: 100%;
+    text-align: center;
+}
+
+.confirmar {
+    padding: 1vh;
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmar input {
+    height: 60%;
+}
+
+.atendimento {
+    width: 50%;
+    padding: 5vw;
+}
+
+.atendimento h3{
+    font-size: 5vh;
+    text-align: center;
+}
+
+.contato {
+    height: 10vh;
+    padding: 2vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.contato h4{
+    font-size: 3vh;
+}
+
+.contato img{
+    height: 100%;
+    margin-right: 1vw;
+}
+
+footer {
+    background-color: var(--off-white-variant);
+    padding: 5vw;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+}
+
+footer .logo{
+    height: 15vh;
+}
+
+.media {
+    height: 25vh;
+}
