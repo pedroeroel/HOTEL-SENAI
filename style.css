@@ -184,6 +184,11 @@ a, a:active, a:visited{
 
 .quartos div div img{
     height: 10rem;
+    transition-duration: .5s;
+}
+
+.quartos div div img:hover{
+    scale: 1.1;
 }
 
 .localizacao {
@@ -216,6 +221,7 @@ a, a:active, a:visited{
     height: 50vh;
     outline: 5px solid var(--logo-color-2);
     border-radius: 2.5vh 10vh;
+    transition-duration: .5s;
 }
 
 .reservas {
@@ -241,6 +247,7 @@ a, a:active, a:visited{
 .registro label{
     height: 100%;
     width: 11vw;
+    margin-right: 1vw;
     text-align: end;
 }
 
@@ -288,7 +295,20 @@ a, a:active, a:visited{
 }
 
 .confirmar input {
-    height: 60%;
+    height: 80%;
+    width: 40%;
+    font-weight: 700;
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+    background-color: #00364f;
+    color: var(--off-white);
+    transition-duration: .5s;
+}
+
+.confirmar input:hover{
+    background-color: var(--logo-color-1);
+    
+    transition-duration: .75s;
 }
 
 .atendimento {
